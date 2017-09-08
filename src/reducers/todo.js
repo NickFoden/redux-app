@@ -1,6 +1,10 @@
 
 const initState = {
-    todos: []
+    todos: [
+        { id: 1, name: 'Create a store', isComplete: true},
+        { id: 2, name: 'Load state through the store', isComplete: true},
+        { id: 3, name: 'Handle state changs with redux', isComplete: false}
+    ]
 }
 export default (state = initState, action) => {
     switch(action.type) {
